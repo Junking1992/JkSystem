@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<title>EasyUI</title>
+<script src="../../js/jkjs001.js"></script>
+</head>
+<body>
+	<div class="easyui-layout" data-options="fit:true">
+		<!-- 查询区 -->
+		<div data-options="region:'center',border:false" class="margin10">
+			<table style="width:98%;height:auto;text-align:center;border-collapse:collapse;" border=1 bordercolor=#dddddd cellpadding="5">
+				<thead>
+					<tr>
+						<th width="20%">功能</th>
+						<th width="50%">输入</th>
+						<th width="15%">模式</th>
+						<th width="15%">查询</th>
+					</tr>                          
+				</thead> 
+				<tbody>                            
+					<form id="ff" action="" method="post">
+						<tr>                           
+							<td>
+								片栋库查询：
+							</td>
+							<td>
+								<input class="easyui-textbox" type="text" name="input" style="width:80%;"></input>
+							</td>
+							<td>
+								<select class="easyui-combobox" name="mode" data-options="panelHeight:'auto'" style="width:80%;" >
+									<option value="key">主键</option>
+									<option value="value">名称</option>
+								</select>
+							</td>
+							<td>
+								<a href="javascript:query()" class="easyui-linkbutton" style="width:80%;">查询</a>
+							</td>
+						</tr>
+					</form>
+				</tbody>
+			</table>
+		</div>
+		<!-- 数据区 -->
+		<div data-options="region:'east',border:false" style="width: 50%" class="margin10">
+			<table id="tt" class="easyui-datagrid" style="width:95%;height:auto;" data-options="striped:true,singleSelect:true" >
+				<thead>
+					<tr>
+						<th field="name1" width="50%">Key</th>
+						<th field="name2" width="50%">Value</th>
+					</tr>                          
+				</thead>                           
+				<tbody>                            
+					<tr>                           
+						<td>Data 1</td>            
+						<td>Data 2</td>            
+						<td>Data 3</td>            
+						<td>Data 4</td>            
+						<td>Data 5</td>            
+						<td>Data 6</td>            
+					</tr>                          
+					<tr>                           
+						<td>Data 1</td>            
+						<td>Data 2</td>            
+						<td>Data 3</td>            
+						<td>Data 4</td>            
+						<td>Data 5</td>            
+						<td>Data 6</td>            
+					</tr>                          
+					<tr>                           
+						<td>Data 1</td>            
+						<td>Data 2</td>            
+						<td>Data 3</td>            
+						<td>Data 4</td>            
+						<td>Data 5</td>            
+						<td>Data 6</td>            
+					</tr>                          
+					<tr>                           
+						<td>Data 1</td>            
+						<td>Data 2</td>            
+						<td>Data 3</td>            
+						<td>Data 4</td>            
+						<td>Data 5</td>            
+						<td>Data 6</td>            
+					</tr>                          
+				</tbody>                           
+			</table>
+		</div>
+	</div>
+</body>
+</html>

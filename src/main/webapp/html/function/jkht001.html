@@ -2,7 +2,7 @@
 <div class="easyui-layout" data-options="fit:true">
 	<!-- 查询区 -->
 	<div data-options="region:'center',border:false" class="margin10">
-		<table style="width:98%;height:auto;text-align:center;border-collapse:collapse;" border=0 bordercolor=#dddddd cellpadding="4">
+		<table style="width:98%;height:auto;text-align:center;border-collapse:collapse;" border=1 bordercolor=#dddddd cellpadding="4">
 			<tr>
 				<th width="20%">功能</th>
 				<th width="50%">输入</th>
@@ -11,7 +11,7 @@
 			</tr>                          
 		</table>
 		<form id="form1" action="/data/query/pubdoc" method="post">
-			<table style="width:98%;height:auto;text-align:center;border-collapse:collapse;" border=0 bordercolor=#dddddd cellpadding="5">
+			<table style="width:98%;height:auto;text-align:center;border-collapse:collapse;border-top: hidden;" border=1 bordercolor=#dddddd cellpadding="5">
 				<tr>                           
 					<td width="20%">
 						片栋库查询：
@@ -32,6 +32,9 @@
 				</tr>
 			</table>
 		</form>
+	</div>
+	<div data-options="region:'south'" style="height: 18px; background: #fff; text-align:right;">
+		<span>消息提示区！</span>
 	</div>
 	<!-- 数据区 -->
 	<div data-options="region:'east',border:false" style="width: 50%" class="margin10">

@@ -32,6 +32,27 @@
 				</tr>
 			</table>
 		</form>
+		<form id="form2" action="/data/query/jar" method="post">
+			<table style="width:98%;height:auto;text-align:center;border-collapse:collapse;border-top: hidden;" border=1 bordercolor=#dddddd cellpadding="5">
+				<tr>                           
+					<td width="20%">
+						坛号查询：
+					</td>
+					<td width="50%">
+						<input class="easyui-textbox" type="text" name="input" style="width:78%;"/>
+					</td>
+					<td width="15%">
+						<select class="easyui-combobox" name="mode" data-options="panelHeight:'auto'" style="width:78%;" >
+							<option value="pk">主键</option>
+							<option value="code">坛号</option>
+						</select>
+					</td>
+					<td width="15%">
+						<a href="javascript:submit('form2');" class="easyui-linkbutton" style="width:78%;">查询</a>
+					</td>
+				</tr>
+			</table>
+		</form>
 	</div>
 	<div data-options="region:'south'" style="height: 18px; background: #fff; text-align:right;">
 		<span>消息提示区！</span>
